@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="target"></p>
+        <p id="kerto"></p>
+        <p id="keskiarvo"></p>
+    <script>
+        const alku = 0;
+        const s1 = prompt("anna ensimäinen kokonaisluku");
+        const s2 = prompt("anna toinen kokonaisluku");
+        const s3 = prompt("anna kolmas kokonaisluku");
+
+        const alkus = parseInt(alku)
+        const ss1 = parseInt(s1)
+        const ss2 = parseInt(s2)
+        const ss3 = parseInt(s3)
+
+        const t1 = alkus + ss1 + ss2 + ss3
+        document.querySelector("#target").innerHTML = 
+        "summa " + t1
+    </script>
+    <script>
+        const kerto = 1;
+        const kertos = parseInt(kerto)
+        const k1 = kertos * ss1 * ss2 * ss3
+        document.querySelector("#kerto").innerHTML =
+        "kerto " + k1
+    </script>
+    <script>
+        const keskiarvo = 0;
+        const keskiarvos = parseInt(keskiarvo)
+        const kk = t1 / 3
+        document.querySelector("#keskiarvo").innerHTML = 
+        "keskiarvo " + kk
+    </script>
+       </body>
+</html>
