@@ -1,0 +1,25 @@
+<html>
+<body>
+<a>koko lista muokkaamatta:</a>
+<p id="muokkaamaton"></p>
+<a>alkuperäinen viimeinen alkio:</a>
+<p id="viimeinen"></p>
+
+<script>
+    const nimi1=prompt("anna nimi")
+    const nimi2=prompt("anna nimi")
+    const nimi3=prompt("anna nimi")
+    const nimi4=prompt("anna nimi")
+    const nimi5=prompt("anna nimi")
+    
+
+    const lista = [nimi1, nimi2, nimi3, nimi4, nimi5];
+    for (let i = 0; i < lista.length; i++) {
+        document.querySelector("#muokkaamaton").innerHTML = lista
+    }
+
+    document.querySelector("#viimeinen").innerHTML = lista[lista.length-1];
+    
+</script>
+</body>
+</html>
